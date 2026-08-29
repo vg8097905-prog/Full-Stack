@@ -1,2 +1,2 @@
-# Java-Script
-My Java Script Journey
+# Full-Stack
+My Full-Stack Journey
