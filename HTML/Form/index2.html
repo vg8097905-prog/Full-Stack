@@ -1,0 +1,35 @@
+<!-- 11.3  Choices: radio buttons, check boxes and drop-downs -->
+
+<p>Gender:
+     <input type="radio" id="m" name="gender" value="male" checked>
+     <label for="m">Male</label>
+     <input type="radio" id="f" name="gender" value="female" >
+     <label for="f">Female</label>
+</p>
+
+<p>Subjects:
+    <input type="checkbox" name="sub" value="html" > HTML
+    <input type="checkbox" name="sub" value="css"> CSS
+    <input type="checkbox" name="sub" value="js" checked> JavaScript
+</p>
+
+<p>Course:
+<select name="course">
+    <option value="bca">BCA</option>
+    <option value="bsc" >B.Sc. IT</option>
+    <option value="mca" selected>MCA</option>
+</select>
+</p>
+
+<p>City:
+<select name="city" size="3" multiple>
+    <optgroup label="Punjab">
+    <option>Ludhiana</option>
+    <option>Jagraon</option>
+</optgroup>
+
+<optgroup label="Haryana">
+    <option>Ambala</option>
+</optgroup>
+</select>
+</p>

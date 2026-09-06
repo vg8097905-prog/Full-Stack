@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+<h2 align="center">Student Registration Form</h2>
+
+<form action="#" method="post">
+
+<table border="1" cellpadding="8" cellspacing="0" align="center">
+
+    <tr>
+        <th colspan="4">Personal Information</th>
+    </tr>
+
+    <tr>
+        <td>First Name</td>
+        <td><input type="text" name="fname" required></td>
+
+        <td>Last Name</td>
+        <td><input type="text" name="lname" required></td>
+    </tr>
+
+    <tr>
+        <td>Date of Birth</td>
+        <td><input type="date" name="dob"></td>
+
+        <td>Gender</td>
+        <td>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </td>
+    </tr>
+
+    <tr>
+        <td>Email</td>
+        <td><input type="email" name="email" required></td>
+
+        <td>Mobile Number</td>
+        <td><input type="tel" name="mobile" maxlength="10"></td>
+    </tr>
+
+    <tr>
+        <th colspan="4">Address Details</th>
+    </tr>
+
+    <tr>
+        <td>Address</td>
+        <td colspan="3">
+            <textarea name="address" rows="3" cols="60"></textarea>
+        </td>
+    </tr>
+
+    <tr>
+        <td>City</td>
+        <td><input type="text" name="city"></td>
+
+        <td>State</td>
+        <td><input type="text" name="state"></td>
+    </tr>
+
+    <tr>
+        <td>Country</td>
+        <td>
+            <select name="country">
+                <option>India</option>
+                <option>USA</option>
+                <option>Canada</option>
+                <option>Australia</option>
+                <option>UK</option>
+            </select>
+        </td>
+
+        <td>PIN Code</td>
+        <td><input type="number" name="pincode"></td>
+    </tr>
+
+    <tr>
+        <th colspan="4">Academic Details</th>
+    </tr>
+
+    <tr>
+        <td>Course</td>
+        <td>
+            <select name="course">
+                <option>BCA</option>
+                <option>B.Tech</option>
+                <option>B.Sc</option>
+                <option>B.Com</option>
+                <option>MCA</option>
+            </select>
+        </td>
+
+        <td>Semester</td>
+        <td>
+            <select name="semester">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Skills</td>
+        <td colspan="3">
+            <input type="checkbox" name="skills"> HTML
+            <input type="checkbox" name="skills"> CSS
+            <input type="checkbox" name="skills"> JavaScript
+            <input type="checkbox" name="skills"> Python
+            <input type="checkbox" name="skills"> Java
+        </td>
+    </tr>
+
+    <tr>
+        <th colspan="4">Account Details</th>
+    </tr>
+
+    <tr>
+        <td>Username</td>
+        <td><input type="text" name="username" required></td>
+
+        <td>Password</td>
+        <td><input type="password" name="password" required></td>
+    </tr>
+
+    <tr>
+        <td>Confirm Password</td>
+        <td><input type="password" name="confirm_password" required></td>
+
+        <td>Upload Photo</td>
+        <td><input type="file" name="photo"></td>
+    </tr>
+
+    <tr>
+        <td colspan="4" align="center">
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear">
+        </td>
+    </tr>
+
+</table>
+
+</form>
+
+</body>
+</html>
