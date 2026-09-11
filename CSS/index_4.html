@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+
+    <style>
+
+        div{
+            border: 1px solid rgb(226, 46, 43);
+        }
+
+        img{
+          margin: 5px;
+          border: 2px solid green;
+        }
+
+        .two{
+            /* position: relative - gap are maintain; */
+          position: relative;
+          bottom: 100px;
+          right: 100px;
+          top: 100px;
+          left: 100px;
+         
+          /* position: absolute-gap are not maintain(Overlap); */
+          /* position: absolute-gap ; */
+          top: 100px;
+        }
+
+        .container{
+            position: relative;
+            /* positioning element regarding current window. */
+            height: 800px;
+            background-color: rgb(129, 14, 14);
+        }
+
+        .three{
+            position: fixed;
+            /* entire webpage */
+        }
+
+        .one{
+            position: sticky;
+            /* related to parent container. */
+            top: 100px;
+        }
+        .box{
+            background-color: aquamarine;
+            height: 5000px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="image/Img1.png" alt="image1" width="180px" height="200px" class="one">
+        <img src="image/img2.png" alt="image2" width="180px" height="200px" class="two">
+        <img src="image/img3.png" alt="image3" width="180px" height="200px" class="three">
+    </div>
+
+    <div class="box">
+
+    </div>
+</body>
+</html>
