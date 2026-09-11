@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Size Units</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+            border: 4px solid rgb(204, 9, 9);
+            /* width depend on parent */
+            width: 50%;
+        }
+
+        .parent {
+            border: 4px solid blue;
+            background-color: aqua;
+            width: 50%;
+        }
+        .child{
+            border: 4px solid black;
+            background-color: maroon;
+            width: 20%;
+        }
+
+        .container{
+            border: 4px solid black;
+            background-color: chartreuse;
+            height: 100vh;
+            /* width: 50vw; */
+            width: 50%;
+        }
+
+        .box1{
+            border: 4px solid red;
+            font-size: 100px;
+            
+        }
+
+        .cave{
+            font-size: 10px;
+        }
+
+        .box2{
+            /* depend on parent size of font*/
+            font-size: 10em;
+        }
+
+        .vivek{
+            border: 4px solid gold;
+            /* this is root element which is directly depend on html tag. */
+            font-size: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- usually font size is 16px in body which is equal to 1em. -->
+    <div class="box">
+        Welcome to css
+    </div>
+
+    <div class="parent">
+        <div class="child">
+            VIVEK
+        </div>
+    </div>
+    
+    <div class="container">
+        Welcome to jungle
+    </div>
+
+    <div class="box1">
+        Vivek Gupta
+    </div>
+
+    <p>
+        Hello jee
+    </p>
+
+    <div class="cave">
+        <div class="box2">
+            welcome to css
+        </div>
+    </div>\
+
+    <p class="vivek">Gupta Ji</p>
+</body>
+</html>
