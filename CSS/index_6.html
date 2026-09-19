@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>CSS float,clear and overflow</title>
+
+    <style>
+        img{
+            float: right;
+        }
+
+        /* #img1{
+            float: left;
+            height: 100px;
+        }
+        #img2{
+            float: right;
+            height: 100px;
+        } */
+
+        #img1{
+            float: right;
+            height: 100px;
+        }
+        #img2{
+            float: right;
+            height: 100px;
+            /* it help to image settled down in vertically. */
+            clear: right;
+        }
+
+        .box1{
+            border: 4px solid black;
+            overflow: auto;
+            /* The great collapse */
+        }
+
+        .item  {
+            background-color: aqua;
+            width: 150px;
+            height: 200px;
+            margin: 2px;
+            border: 4px solid blue;
+            float: left;
+        }
+
+        .overflow{
+            border: 4px solid black;
+            width: 500px;
+            height:400px;
+            /* jo thik lage vo kardo */
+            overflow: auto;
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+        }
+        #item2{
+            float:right
+        }
+
+        #item3{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/Apna College/Bike-images.jpg" alt="Bike">
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, quos? Minima dolore ullam laudantium nam ab impedit totam laborum. Rerum corporis, molestias rem aspernatur debitis vero, aut iusto possimus similique iure porro reprehenderit fugiat eum nesciunt quisquam omnis sint error et culpa ea inventore odit nihil laboriosam exercitationem. Est, veniam!</p>    </div>
+
+<hr>
+    <div class="box">
+       <img  id="img1"  src=.= alt="Bike">
+       <img id="img2"   src="/Apna College/Bike-images.jpg" alt="Bike">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quis, quibusdam itaque quidem ut a quisquam dolor possimus perspiciatis beatae laboriosam voluptas totam veniam dolorum vero nostrum cum nam fugiat at hic facere quod nisi repudiandae ab. Error, assumenda. Debitis maiores animi suscipit maxime eum natus repellat dolor quaerat beatae Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse optio repellendus illum temporibus, laudantium placeat exercitationem sunt consequuntur ipsam perspiciatis sequi. Pariatur, blanditiis architecto! Pariatur, fugiat veritatis alias nam illum a in tempore tempora culpa dolores, iure, earum ducimus! Quisquam quaerat obcaecati quae, unde maxime nam praesentium, dolorem quo aliquam delectus amet explicabo animi. Dignissimos, deserunt facilis! Quaerat, nobis quod? Beatae cupiditate quidem sequi minima nam deserunt quo ipsum laudantium..
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="overflow">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore harum minus eum numquam cumque. Officia facere consequuntur accusamus vitae omnis amet, totam, modi, animi itaque quo odio suscipit voluptatem quas nam exercitationem architecto perferendis magnam corporis voluptatum? Itaque, eius! Soluta, quidem provident rerum non facere fugit error possimus accusantium repudiandae distinctio similique aspernatur quis reiciendis! Perferendis quos quasi, earum voluptate possimus dignissimos magnam doloribus culpa tempora necessitatibus error nemo labore explicabo ipsa aspernatur voluptates assumenda maxime saepe ipsum hic ratione laborum eos repudiandae! Hic a debitis ea, deleniti possimus corrupti alias sint et quo. Suscipit expedita iusto quasi sapiente esse! Eaque neque quasi dolorem voluptas atque quam repellat iure. Facilis magnam hic, illo non porro aliquam, quod explicabo temporibus nobis aperiam odio dolor nisi atque quasi? Accusamus quaerat iusto repellendus laboriosam aliquid optio dicta vel. Quia velit vel cupiditate enim cum laudantium, repudiandae minima in, nobis rerum, nihil aut! Ducimus neque excepturi eveniet tenetur ipsa ullam, animi, consequuntur assumenda, dolore cumque tempora placeat nesciunt porro quasi. Soluta veritatis ex, aliquid voluptates molestiae similique dolorem qui harum incidunt sed quam illo iste vel. Quasi aut repudiandae nulla quam veniam eligendi obcaecati, autem iure officiis accusantium id repellat incidunt aliquid voluptate architecto sit fuga laboriosam facere unde sed eos enim quis? Ipsum necessitatibus provident aperiam quam? Aliquam, adipisci veniam necessitatibus vitae dolorem a fugit doloremque dicta beatae, nam harum sed doloribus omnis magnam repellendus ipsum numquam molestiae blanditiis illum delectus quo asperiores. Sit esse incidunt inventore ex commodi beatae temporibus quia explicabo cupiditate eum similique quae, voluptatibus voluptas tempora maxime, non sequi iste. Laborum porro commodi quo placeat quod aliquid adipisci, nam, quisquam error, delectus ducimus similique animi repudiandae amet est exercitationem? Iusto consequuntur sed ex cum voluptates, necessitatibus tempora perspiciatis omnis, ad eligendi temporibus ipsum at provident enim odio accusantium ullam. Dolore expedita nisi tempore, veritatis quibusdam earum quasi aliquam nemo sed saepe? Possimus hic consequuntur quasi, officia, atque cupiditate maxime soluta nam, repudiandae minima doloremque eligendi illum dolor at ipsum? Numquam, mollitia est nemo totam corrupti, iusto ut sed porro assumenda voluptatem eius, eaque maxime eligendi labore. Nisi incidunt maxime placeat eum magni dicta vitae, dolorem laborum praesentium, asperiores dolorum, quo non. Incidunt sequi optio exercitationem eos repudiandae nesciunt quia. Molestiae quasi, quis minima eius fugit aut omnis consectetur voluptas corrupti quo iure sequi reprehenderit? Voluptas, voluptatum eius unde nemo molestiae laborum suscipit sapiente impedit tempora distinctio praesentium, similique necessitatibus perspiciatis soluta, delectus laudantium optio illum odio consectetur a cupiditate vitae. Perspiciatis voluptates ratione esse ex voluptatem veniam quaerat sequi rem. Ex omnis sit magnam earum cumque odit, aliquam ipsa id, dicta error a perspiciatis ratione harum alias nobis nam neque autem tenetur non sed placeat ipsam. Autem iure molestiae animi? Natus assumenda qui delectus quam modi enim, necessitatibus, labore quasi dolorem expedita, praesentium quas? Veritatis, libero? Eos velit voluptatum inventore! At consequatur modi est neque ea eum officiis nulla fugit fugiat saepe. Rem nobis cum nam delectus sapiente quis enim totam error? Quisquam maiores quae libero fugit odit cum?</div>
+
+<hr>
+      <div class="box1">
+          <div class="item" id="item1">A</div>
+          <div class="item" id="item2">B</div>
+          <div class="item" id="item3">C</div>
+      </div>
+
+      <hr>
+
+
+</body>
+</html>

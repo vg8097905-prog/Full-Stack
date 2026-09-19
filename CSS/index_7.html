@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <!-- felxbox and grid play important role in layout of webpage. -->
+     <!-- flexbox is a 1-D Layout Method (Flexible Method)-->
+
+    <style>
+        .container{
+            background-color: rgb(105, 4, 107);
+            border: 4px solid black;
+            margin: 4px;
+            padding: 2px;
+            height: 100vh;
+            width: 100vw;
+            /* display: flex; */
+            /* flex-direction:row; */
+             /*by default flex ki properties jo hoti hai vo row hoti hai.*/
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+
+
+            /* flex-wrap: nowrap;*/
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse;*/
+
+
+            /* Justify contain across main axis.-->row*/
+            /* height: 500px; */
+            /* justify-content: center; */
+            /* justify-content: end; */
+            /* justify-content: start; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+
+
+             /* align-items work on cross axis.-->row */
+            /* height: 1000px; */
+            /* align-items: center; */
+            /* align-items: end; */
+            /* align-items: start; */
+            /* stretch only work when box have not own height and width. */
+            /* align-items: stretch; */
+
+
+            /* justify contain across cross axis.-->column */
+            /* height: 1000px; */
+            /* justify-content: center; */
+            /* justify-content: end; */
+            /* justify-content: start; */
+            /* (for extreme corner use space between) */
+            /* justify-content: space-between; */
+            /*(for corner use around)*/
+            /* justify-content: space-around; */
+            /* (for equal space around boxes use even) */
+            /* justify-content: space-evenly; */
+
+
+            /* align-items work on main axis.-->column */
+            /* height: 1000px; */
+            /* align-items: center; */
+            /* align-items: end; */
+            /* align-items: start; */
+            /* stretch only work when box have not own height and width. */
+            /* align-items: stretch; */
+
+
+            /* if want to place element in centre of vertically as well as horizontally.*/
+            /* it totally depend on flex or flex-direction's-->row/column.*/
+            /* height: 1000px; */
+            /* justify-content: center;
+            align-items: center; */
+
+            
+            /* minimizing/remove the gap between content-->it only works when wrapping ON. */
+            /* align-content: start; */
+            /* align-content: end; */
+            /* align-content: center; */
+        } 
+        
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 3px solid yellowgreen;
+            margin: 4px;
+            padding: 2px;
+        }
+
+        /* align self depend on flex box.
+           while justify-self doesn't depend on flex box.*/
+
+        #box1{
+            background-color:aqua;
+            /* order properties for sequences  +ve(for forward) or -ve(for backward element)*/
+            /* order: 500; */
+            /* flex-shrink:4 ; */
+            /* flex-grow: 1; */
+            /* remaining space are distibuted equally. */
+            /* align-self: center; */
+            /* it depend on how much height are given. */
+        }
+        #box2{
+            background-color: blue;
+            /* flex-grow: 4; */
+            /* align-self: flex-end; */
+        }
+        #box3{
+            background-color:orange;
+            /* justify-self: center; */
+            /* justify-self: auto; */
+            /* justify-self: end; */
+            /* justify-self:flex-start; */
+            /* flex-grow: 1; */
+            /* align-self: last baseline;*/
+        }
+        #box4{
+            background-color: brown;
+            /* order: -1; */
+            /* flex-grow: 1; */
+            /* flex-basis: 400px; */
+            /* help in set dimensions */
+            /* align-self: center; */
+            /* align-self:start; */
+        }
+
+        span{
+            /* baad mai samajhana  */
+            align-self: center;
+            justify-self:end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box1</div>
+        <div class="box" id="box2">Box2</div>
+        <div class="box" id="box3">Box3</div>
+        <div class="box" id="box4">Box4</div>
+        <span class="box" id="box5">Box5</span>
+    </div>
+</body>
+</html>

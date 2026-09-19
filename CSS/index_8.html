@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <!-- tool to represent arrangement of element in different diaplay size -->
+    <!-- different display sizes par arrangement of element different tarike se show karti hai --Responsive design -->
+
+    <style>
+        .box{
+            background-color: aqua;
+            height:400px;
+            width:400px;
+            border:4px solid black;
+        }
+
+     /* 
+        @media(min-width:500px){
+            .box{
+                background-color: green;
+            }
+        } */
+
+        /* @media(max-width:500px){
+            .box{
+                background-color: green;
+            }
+        } 
+            */
+
+        @media(min-width:300px) and (max-width:500px){
+            .box{
+                background-color: green;
+            }
+        }
+
+        .container{
+            background-color: blue;
+            border: 4px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+        }
+
+            .rectangle{
+            height: 200px;
+            width: 200px;
+            border: 3px solid yellowgreen;
+            margin: 4px;
+            padding: 2px;
+        }
+        #box1{
+            background-color:aqua;
+            /* order properties for sequences  +ve(for forward) or -ve(for backward element)*/
+            /* order: 500; */
+            /* flex-shrink:4 ; */
+            /* flex-grow: 1; */
+            /* remaining space are distibuted equally. */
+            /* align-self: center; */
+
+        }
+        #box2{
+            background-color: rgb(68, 68, 75);
+            /* flex-grow: 4; */
+            /* align-self: flex-end; */
+        }
+        #box3{
+            background-color:orange;
+            /* flex-grow: 1; */
+            /* align-self: last baseline; */
+        }
+        #box4{
+            background-color: brown;
+            /* order: -1; */
+            /* flex-grow: 1; */
+            /* flex-basis: 400px; */
+            /* help in set dimensions */
+            /* align-self: center; */
+
+        }
+
+        @media(min-width:640px){
+            .container{
+                flex-direction:row;
+            }
+        }
+
+        
+        @media(max-width:640px){
+            .container{
+                flex-direction:column;
+            }
+        }
+
+        .container2{
+            background-color: chartreuse;
+            border: 4px solid black;
+            display: flex;
+            flex-direction: row;
+            padding: 2px;
+            margin: 10px;
+        }
+
+        .boxleft{
+            background-color: rgb(0, 17, 255);
+            border: 4px solid rgb(246, 255, 0);
+            width: 50%;
+            margin: 3px;
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .boxright{
+            background-color: yellow;
+            border: 4px solid rgb(248, 0, 137);
+            width: 50%;
+             margin: 3px;
+            padding: 2px;
+        } 
+
+        img{
+            width: 100%;
+        }
+
+        @media (max-width:640px){
+            .container2{
+                flex-direction: column;
+            }
+        }
+
+        p{
+            border: 4px solid red;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">Hello Jee</div>
+
+    <hr>
+
+    <div class="container">
+        <div class="rectangle" id="box1">box1</div>
+        <div class="rectangle" id="box2">box2</div>
+        <div class="rectangle" id="box3">box3</div>
+        <div class="rectangle" id="box4">box4</div>
+    </div>
+
+    <hr>
+
+      <div class="container2">
+        <div class="boxleft">
+            <p>text1</p>
+            <p>text2</p>
+        </div>
+
+        <div class="boxright">
+            <img src="/Apna College/Bike-images.jpg" alt="gt360">
+        </div>
+      </div>
+</body>
+</html>
