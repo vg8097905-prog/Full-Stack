@@ -1,4 +1,7 @@
-// Temporfal dead zone - jaha par value ko access karna possible nahi hai through let and const.
+// Temporal dead zone & Variable Scoping
+
+// Temporal dead zone - jaha par value ko access karna possible nahi hai through let and const.
+
 // console.log(marks);
 // console.log("babbar");
 // console.log("Love");
